@@ -1,6 +1,9 @@
 # Simptomed — AI-ассистент для первичной оценки симптомов
 
-> **Demo:** https://simptomed.vercel.app
+[![CI](https://github.com/sbot666/simptomed/actions/workflows/ci.yml/badge.svg)](https://github.com/sbot666/simptomed/actions/workflows/ci.yml)
+[![Deployed on Vercel](https://img.shields.io/badge/vercel-live-black?logo=vercel)](https://simptomed.vercel.app)
+
+> **Live demo:** https://simptomed.vercel.app
 
 Медицинский триаж-чат на базе Claude. Пользователь описывает симптомы — ассистент структурированно отвечает: возможные причины, к какому врачу идти, когда вызывать скорую, что можно сделать сейчас. При обнаружении «красных флагов» сразу маршрутизирует в 103 / 112.
 
