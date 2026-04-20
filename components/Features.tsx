@@ -55,7 +55,7 @@ const FEATURES = [
     text: "ИИ тратит больше времени на сложные случаи и меньше — на простые. Это даёт точнее и быстрее, чем классические чат-боты.",
   },
   {
-    gradient: "from-slate-600 to-slate-800",
+    gradient: "from-slate-600 to-ink-900",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -70,7 +70,7 @@ export default function Features() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="py-24 bg-white relative">
+    <section className="py-24 bg-ink-800 relative">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={reduced ? undefined : { opacity: 0, y: 20 }}
@@ -82,10 +82,10 @@ export default function Features() {
           <span className="text-sm font-medium text-brand-600 uppercase tracking-wider">
             Возможности
           </span>
-          <h2 className="mt-2 text-3xl md:text-4xl font-semibold text-slate-900 tracking-tight">
+          <h2 className="mt-2 text-3xl md:text-4xl font-semibold text-ink-50 tracking-tight">
             Что даёт Simptomed
           </h2>
-          <p className="mt-4 text-slate-600 leading-relaxed">
+          <p className="mt-4 text-ink-200 leading-relaxed">
             Не замена врача, а помощь в навигации: куда идти, насколько
             срочно, что делать в ожидании приёма.
           </p>
@@ -105,7 +105,7 @@ export default function Features() {
               }}
             >
               <TiltCard className="h-full">
-                <div className="group h-full bg-white rounded-2xl p-7 border border-slate-200 hover:border-slate-300 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 relative overflow-hidden">
+                <div className="group h-full bg-ink-800 rounded-2xl p-7 border border-ink-700 hover:border-ink-600 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 relative overflow-hidden">
                   <div className={`absolute inset-0 bg-gradient-to-br ${f.gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity`} />
                   <div
                     className={`relative inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${f.gradient} text-white mb-5 shadow-lg`}
@@ -113,10 +113,10 @@ export default function Features() {
                   >
                     {f.icon}
                   </div>
-                  <h3 className="relative font-semibold text-slate-900 mb-2 text-lg" style={{ transform: "translateZ(20px)" }}>
+                  <h3 className="relative font-semibold text-ink-50 mb-2 text-lg" style={{ transform: "translateZ(20px)" }}>
                     {f.title}
                   </h3>
-                  <p className="relative text-slate-600 leading-relaxed text-[15px]">
+                  <p className="relative text-ink-200 leading-relaxed text-[15px]">
                     {f.text}
                   </p>
                 </div>

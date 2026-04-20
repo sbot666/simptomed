@@ -59,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru" className="scroll-smooth">
-      <body className="min-h-screen flex flex-col bg-white text-slate-900 antialiased">
+      <body className="min-h-screen flex flex-col bg-ink-800 text-ink-50 antialiased">
         <Header />
         <main className="flex-1 flex flex-col">{children}</main>
         <Footer />

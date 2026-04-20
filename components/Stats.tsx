@@ -43,10 +43,10 @@ export default function Stats() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="py-16 bg-slate-900 relative overflow-hidden">
+    <section className="py-16 bg-ink-950 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6">
@@ -63,7 +63,7 @@ export default function Stats() {
               <div className="text-4xl md:text-5xl font-bold text-white mb-2">
                 <Counter target={s.value} suffix={s.suffix} />
               </div>
-              <div className="text-sm text-slate-400">{s.label}</div>
+              <div className="text-sm text-ink-400">{s.label}</div>
             </motion.div>
           ))}
         </div>

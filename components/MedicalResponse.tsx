@@ -37,7 +37,7 @@ const components: Components = {
 
     if (text.startsWith("🚨 СРОЧНО")) {
       return (
-        <div className="my-4 rounded-xl border-l-4 border-red-500 bg-red-50 p-4 shadow-sm">
+        <div className="my-4 rounded-xl border-l-4 border-red-400 bg-red-950/40 p-4 shadow-sm">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-red-500 text-white animate-pulse-slow">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -45,7 +45,7 @@ const components: Components = {
               </svg>
             </span>
             <div className="flex-1">
-              <p className="font-semibold text-red-900 leading-snug">
+              <p className="font-semibold text-red-200 leading-snug">
                 {children}
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
@@ -76,7 +76,7 @@ const components: Components = {
 
     if (text.startsWith("⚠️") && text.includes("не медицинская консультация")) {
       return (
-        <p className="mt-3 text-xs text-slate-500 italic leading-relaxed">
+        <p className="mt-3 text-xs text-ink-300 italic leading-relaxed">
           {children}
         </p>
       );
@@ -94,7 +94,7 @@ const components: Components = {
         </span>
       );
     }
-    return <strong className="font-semibold text-slate-900">{children}</strong>;
+    return <strong className="font-semibold text-ink-50">{children}</strong>;
   },
 
   ul({ children }) {
@@ -131,7 +131,7 @@ const components: Components = {
   },
 
   hr() {
-    return <hr className="my-4 border-slate-200" />;
+    return <hr className="my-4 border-ink-700" />;
   },
 
   a({ href, children }) {
@@ -139,7 +139,7 @@ const components: Components = {
       return (
         <a
           href={href}
-          className="inline-flex items-center gap-1 font-semibold text-red-600 hover:text-red-700 underline decoration-red-300 underline-offset-2"
+          className="inline-flex items-center gap-1 font-semibold text-red-400 hover:text-red-300 underline decoration-red-300 underline-offset-2"
         >
           <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
@@ -169,7 +169,7 @@ export default function MedicalResponse({ content, isStreaming = false }: Props)
   const processed = linkifyPhones(content);
 
   return (
-    <div className="text-slate-800 text-[15px]">
+    <div className="text-ink-50 text-[15px]">
       <ReactMarkdown components={components}>{processed}</ReactMarkdown>
       {isStreaming && (
         <span className="inline-block w-1.5 h-4 bg-brand-500 animate-pulse ml-0.5 align-middle rounded-sm" />

@@ -6,7 +6,7 @@ export default function Loading() {
           <span className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-500 to-cyan-500 animate-ping opacity-40" />
           <span className="absolute inset-1 rounded-full bg-gradient-to-br from-brand-500 to-cyan-500" />
         </div>
-        <span className="text-slate-600 text-sm">Загрузка…</span>
+        <span className="text-ink-200 text-sm">Загрузка…</span>
       </div>
     </div>
   );

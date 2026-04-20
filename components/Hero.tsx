@@ -29,7 +29,7 @@ export default function Hero() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-brand-50/40 to-white">
+    <section className="relative overflow-hidden bg-gradient-to-b from-ink-850 via-brand-50/40 to-ink-800">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-40 -right-20 w-[500px] h-[500px] bg-brand-300/20 rounded-full blur-3xl" />
         <div className="absolute -bottom-32 -left-20 w-[400px] h-[400px] bg-cyan-200/20 rounded-full blur-3xl" />
@@ -44,7 +44,7 @@ export default function Hero() {
         >
           <motion.span
             variants={reduced ? undefined : fadeUp}
-            className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-brand-200 text-brand-700 text-xs font-medium px-3 py-1.5 rounded-full mb-6 shadow-sm"
+            className="inline-flex items-center gap-2 bg-ink-800/80 backdrop-blur-sm border border-brand-200 text-brand-700 text-xs font-medium px-3 py-1.5 rounded-full mb-6 shadow-sm"
           >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75" />
@@ -55,7 +55,7 @@ export default function Hero() {
 
           <motion.h1
             variants={reduced ? undefined : fadeUp}
-            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-slate-900 leading-[1.05] tracking-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-semibold text-ink-50 leading-[1.05] tracking-tight mb-6"
           >
             Опишите симптомы —{" "}
             <span className="bg-gradient-to-r from-brand-600 via-brand-500 to-cyan-500 bg-clip-text text-transparent">
@@ -65,7 +65,7 @@ export default function Hero() {
 
           <motion.p
             variants={reduced ? undefined : fadeUp}
-            className="text-lg md:text-xl text-slate-600 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
+            className="text-lg md:text-xl text-ink-200 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
           >
             Simptomed помогает понять, что могут означать ваши симптомы, к
             какому врачу идти и когда нужна срочная помощь. Без диагнозов
@@ -78,7 +78,7 @@ export default function Hero() {
           >
             <Link
               href="/chat"
-              className="group relative overflow-hidden bg-slate-900 hover:bg-slate-800 text-white font-medium px-7 py-3.5 rounded-xl transition shadow-lg shadow-slate-900/10 hover:shadow-xl hover:shadow-slate-900/20 hover:-translate-y-0.5 duration-200"
+              className="group relative overflow-hidden bg-ink-950 hover:bg-ink-900 text-white font-medium px-7 py-3.5 rounded-xl transition shadow-lg shadow-slate-900/10 hover:shadow-xl hover:shadow-slate-900/20 hover:-translate-y-0.5 duration-200"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Открыть чат
@@ -90,7 +90,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#how-it-works"
-              className="bg-white hover:bg-slate-50 text-slate-900 font-medium px-7 py-3.5 rounded-xl border border-slate-200 hover:border-slate-300 transition shadow-sm hover:shadow"
+              className="bg-ink-800 hover:bg-ink-850 text-ink-50 font-medium px-7 py-3.5 rounded-xl border border-ink-700 hover:border-ink-600 transition shadow-sm hover:shadow"
             >
               Как это работает
             </Link>
@@ -98,7 +98,7 @@ export default function Hero() {
 
           <motion.div
             variants={reduced ? undefined : fadeUp}
-            className="mt-8 flex items-center gap-6 text-sm text-slate-500 justify-center lg:justify-start"
+            className="mt-8 flex items-center gap-6 text-sm text-ink-300 justify-center lg:justify-start"
           >
             <span className="flex items-center gap-1.5">
               <svg className="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
@@ -128,7 +128,7 @@ export default function Hero() {
           className="relative h-[380px] md:h-[460px] lg:h-[520px] w-full"
         >
           <HeroScene />
-          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink-800 to-transparent pointer-events-none" />
         </motion.div>
       </div>
     </section>

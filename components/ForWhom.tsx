@@ -29,7 +29,7 @@ export default function ForWhom() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="py-24 bg-white relative">
+    <section className="py-24 bg-ink-800 relative">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={reduced ? undefined : { opacity: 0, y: 20 }}
@@ -41,7 +41,7 @@ export default function ForWhom() {
           <span className="text-sm font-medium text-brand-600 uppercase tracking-wider">
             Для кого
           </span>
-          <h2 className="mt-2 text-3xl md:text-4xl font-semibold text-slate-900 tracking-tight">
+          <h2 className="mt-2 text-3xl md:text-4xl font-semibold text-ink-50 tracking-tight">
             Кому это полезно
           </h2>
         </motion.div>
@@ -59,13 +59,13 @@ export default function ForWhom() {
                 ease: [0.22, 1, 0.36, 1],
               }}
               whileHover={reduced ? undefined : { y: -4 }}
-              className="bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300"
+              className="bg-ink-850 hover:bg-ink-800 rounded-2xl p-6 border border-ink-700 hover:border-ink-600 hover:shadow-lg transition-all duration-300"
             >
               <div className="text-4xl mb-4">{g.emoji}</div>
-              <h3 className="font-semibold text-slate-900 text-lg mb-2">
+              <h3 className="font-semibold text-ink-50 text-lg mb-2">
                 {g.title}
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-ink-200 text-sm leading-relaxed">
                 {g.text}
               </p>
             </motion.div>

@@ -24,7 +24,7 @@ export default function HowItWorks() {
   const reduced = useReducedMotion();
 
   return (
-    <section id="how-it-works" className="py-24 bg-slate-50 relative">
+    <section id="how-it-works" className="py-24 bg-ink-850 relative">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={reduced ? undefined : { opacity: 0, y: 20 }}
@@ -36,10 +36,10 @@ export default function HowItWorks() {
           <span className="text-sm font-medium text-brand-600 uppercase tracking-wider">
             Процесс
           </span>
-          <h2 className="mt-2 text-3xl md:text-4xl font-semibold text-slate-900 tracking-tight">
+          <h2 className="mt-2 text-3xl md:text-4xl font-semibold text-ink-50 tracking-tight">
             Как это работает
           </h2>
-          <p className="mt-4 text-slate-600 leading-relaxed">
+          <p className="mt-4 text-ink-200 leading-relaxed">
             Три простых шага от симптома до понятного следующего действия.
           </p>
         </motion.div>
@@ -61,15 +61,15 @@ export default function HowItWorks() {
                 delay: i * 0.15,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="relative bg-white rounded-2xl p-7 border border-slate-200 shadow-sm"
+              className="relative bg-ink-800 rounded-2xl p-7 border border-ink-700 shadow-sm"
             >
               <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 text-white font-semibold text-lg mb-5 shadow-lg shadow-brand-500/20">
                 {step.num}
               </div>
-              <h3 className="font-semibold text-slate-900 text-lg mb-2">
+              <h3 className="font-semibold text-ink-50 text-lg mb-2">
                 {step.title}
               </h3>
-              <p className="text-slate-600 text-[15px] leading-relaxed">
+              <p className="text-ink-200 text-[15px] leading-relaxed">
                 {step.text}
               </p>
             </motion.div>

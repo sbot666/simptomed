@@ -20,7 +20,7 @@ function Core() {
   return (
     <Sphere ref={ref} args={[1.2, 64, 64]}>
       <MeshDistortMaterial
-        color="#3b82f6"
+        color="#d97757"
         attach="material"
         distort={0.35}
         speed={1.8}
@@ -98,7 +98,7 @@ function Particles({ count = 60 }: { count?: number }) {
       </bufferGeometry>
       <pointsMaterial
         size={0.04}
-        color="#60a5fa"
+        color="#f1a377"
         transparent
         opacity={0.8}
         sizeAttenuation
@@ -116,17 +116,17 @@ export default function HeroScene() {
       style={{ background: "transparent" }}
     >
       <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 5]} intensity={1.2} color="#ffffff" />
-      <directionalLight position={[-5, -3, 3]} intensity={0.5} color="#93c5fd" />
-      <pointLight position={[0, 0, 3]} intensity={1} color="#60a5fa" />
+      <directionalLight position={[5, 5, 5]} intensity={1.2} color="#fff5ec" />
+      <directionalLight position={[-5, -3, 3]} intensity={0.5} color="#f1a377" />
+      <pointLight position={[0, 0, 3]} intensity={1} color="#d97757" />
 
       <Float speed={1.5} rotationIntensity={0.4} floatIntensity={0.6}>
         <Core />
       </Float>
 
-      <Ring radius={1.8} thickness={0.02} color="#3b82f6" speed={0.4} axis="x" />
-      <Ring radius={2.1} thickness={0.015} color="#60a5fa" speed={-0.3} axis="y" />
-      <Ring radius={2.4} thickness={0.012} color="#93c5fd" speed={0.25} axis="z" />
+      <Ring radius={1.8} thickness={0.02} color="#d97757" speed={0.4} axis="x" />
+      <Ring radius={2.1} thickness={0.015} color="#ea8657" speed={-0.3} axis="y" />
+      <Ring radius={2.4} thickness={0.012} color="#f1a377" speed={0.25} axis="z" />
 
       <Particles count={80} />
     </Canvas>

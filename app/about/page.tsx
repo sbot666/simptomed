@@ -23,9 +23,9 @@ export default function AboutPage() {
         subtitle="Мы делаем инструмент, который помогает сориентироваться в симптомах — и ничего больше."
       />
 
-      <article className="max-w-3xl mx-auto px-6 py-14 space-y-10 text-slate-700 leading-relaxed">
+      <article className="max-w-3xl mx-auto px-6 py-14 space-y-10 text-ink-100 leading-relaxed">
         <section>
-          <h2 className="text-2xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-2xl font-semibold text-ink-50 mb-3">
             Почему это вообще нужно
           </h2>
           <p>
@@ -41,7 +41,7 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-2xl font-semibold text-ink-50 mb-3">
             Как устроен ответ
           </h2>
           <p>
@@ -51,25 +51,25 @@ export default function AboutPage() {
             <li className="flex gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
               <span>
-                <strong className="text-slate-900">Возможные причины</strong> — 3–5 состояний от самых распространённых к редким.
+                <strong className="text-ink-50">Возможные причины</strong> — 3–5 состояний от самых распространённых к редким.
               </span>
             </li>
             <li className="flex gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
               <span>
-                <strong className="text-slate-900">К какому врачу обратиться</strong> — 1–3 специалиста с объяснением.
+                <strong className="text-ink-50">К какому врачу обратиться</strong> — 1–3 специалиста с объяснением.
               </span>
             </li>
             <li className="flex gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
               <span>
-                <strong className="text-slate-900">Когда нужна срочная помощь</strong> — симптомы, при которых нужна скорая.
+                <strong className="text-ink-50">Когда нужна срочная помощь</strong> — симптомы, при которых нужна скорая.
               </span>
             </li>
             <li className="flex gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
               <span>
-                <strong className="text-slate-900">Что можно сделать сейчас</strong> — безопасные действия до визита.
+                <strong className="text-ink-50">Что можно сделать сейчас</strong> — безопасные действия до визита.
               </span>
             </li>
           </ul>
@@ -81,36 +81,36 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-2xl font-semibold text-ink-50 mb-3">
             Чего Simptomed никогда не сделает
           </h2>
           <ul className="space-y-2">
             <li className="flex gap-3">
-              <span className="text-red-500 mt-0.5">✕</span>
+              <span className="text-red-400 mt-0.5">✕</span>
               <span>Не поставит диагноз.</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-red-500 mt-0.5">✕</span>
+              <span className="text-red-400 mt-0.5">✕</span>
               <span>Не назначит препарат и не подскажет дозировку — даже очевидную.</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-red-500 mt-0.5">✕</span>
+              <span className="text-red-400 mt-0.5">✕</span>
               <span>Не скажет «это точно рак» или «это точно не рак» — только врач после обследования.</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-red-500 mt-0.5">✕</span>
+              <span className="text-red-400 mt-0.5">✕</span>
               <span>Не заменит очный приём. Если сомневаетесь — идите к врачу.</span>
             </li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-2xl font-semibold text-ink-50 mb-3">
             На чём всё работает
           </h2>
           <p>
             Simptomed построен на{" "}
-            <strong className="text-slate-900">Claude Opus 4.7</strong> — одной
+            <strong className="text-ink-50">Claude Opus 4.7</strong> — одной
             из самых сильных моделей ИИ на сегодня. Мы используем адаптивное
             мышление: модель сама решает, сколько времени ей нужно подумать над
             конкретным случаем. Простые вопросы обрабатываются мгновенно,
@@ -123,15 +123,15 @@ export default function AboutPage() {
         </section>
 
         <div className="bg-gradient-to-br from-brand-50 to-cyan-50 rounded-2xl p-8 border border-brand-200/50 text-center">
-          <h3 className="text-xl font-semibold text-slate-900 mb-2">
+          <h3 className="text-xl font-semibold text-ink-50 mb-2">
             Попробуйте сами
           </h3>
-          <p className="text-slate-600 mb-5">
+          <p className="text-ink-200 mb-5">
             Бесплатно, без регистрации, анонимно.
           </p>
           <Link
             href="/chat"
-            className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg"
+            className="inline-flex items-center gap-2 bg-ink-950 hover:bg-ink-900 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg"
           >
             Открыть чат
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

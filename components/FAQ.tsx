@@ -39,7 +39,7 @@ export default function FAQ() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-24 bg-ink-850">
       <div className="max-w-3xl mx-auto px-6">
         <motion.div
           initial={reduced ? undefined : { opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export default function FAQ() {
           <span className="text-sm font-medium text-brand-600 uppercase tracking-wider">
             Вопросы
           </span>
-          <h2 className="mt-2 text-3xl md:text-4xl font-semibold text-slate-900 tracking-tight">
+          <h2 className="mt-2 text-3xl md:text-4xl font-semibold text-ink-50 tracking-tight">
             Часто задаваемые вопросы
           </h2>
         </motion.div>
@@ -66,19 +66,19 @@ export default function FAQ() {
                 whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-20px" }}
                 transition={{ duration: 0.4, delay: i * 0.04 }}
-                className="bg-white rounded-xl border border-slate-200 overflow-hidden"
+                className="bg-ink-800 rounded-xl border border-ink-700 overflow-hidden"
               >
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   aria-expanded={isOpen}
-                  className="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition"
+                  className="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-ink-850 transition"
                 >
-                  <span className="font-medium text-slate-900 pr-4">{item.q}</span>
+                  <span className="font-medium text-ink-50 pr-4">{item.q}</span>
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.2 }}
-                    className="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-600"
+                    className="flex-shrink-0 w-7 h-7 rounded-full bg-ink-750 flex items-center justify-center text-ink-200"
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -95,7 +95,7 @@ export default function FAQ() {
                       transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
                       className="overflow-hidden"
                     >
-                      <div className="px-5 pb-5 text-slate-600 leading-relaxed text-[15px]">
+                      <div className="px-5 pb-5 text-ink-200 leading-relaxed text-[15px]">
                         {item.a}
                       </div>
                     </motion.div>

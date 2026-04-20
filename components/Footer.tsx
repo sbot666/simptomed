@@ -18,14 +18,14 @@ const NAV_LEGAL = [
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 mt-auto">
+    <footer className="bg-ink-950 text-ink-200 mt-auto">
       <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
         <div className="md:col-span-1">
           <div className="flex items-center gap-2 mb-4">
             <Logo size={32} />
             <span className="font-semibold text-white">Simptomed</span>
           </div>
-          <p className="text-slate-400 leading-relaxed text-[13px]">
+          <p className="text-ink-400 leading-relaxed text-[13px]">
             Первичная оценка симптомов с ИИ. Не ставим диагнозы —
             помогаем понять, к кому идти и насколько срочно.
           </p>
@@ -40,7 +40,7 @@ export default function Footer() {
               <li key={l.href}>
                 <Link
                   href={l.href}
-                  className="text-slate-400 hover:text-white transition"
+                  className="text-ink-400 hover:text-white transition"
                 >
                   {l.label}
                 </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
               <li key={l.href}>
                 <Link
                   href={l.href}
-                  className="text-slate-400 hover:text-white transition"
+                  className="text-ink-400 hover:text-white transition"
                 >
                   {l.label}
                 </Link>
@@ -68,7 +68,7 @@ export default function Footer() {
               <li key={l.href}>
                 <Link
                   href={l.href}
-                  className="text-slate-400 hover:text-white transition"
+                  className="text-ink-400 hover:text-white transition"
                 >
                   {l.label}
                 </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
           <h4 className="font-semibold text-white mb-4 text-[13px] uppercase tracking-wider">
             Экстренные службы
           </h4>
-          <ul className="space-y-2.5 text-slate-400">
+          <ul className="space-y-2.5 text-ink-400">
             <li>
               Скорая:{" "}
               <a href="tel:103" className="font-semibold text-white hover:underline">
@@ -101,7 +101,7 @@ export default function Footer() {
               >
                 8-800-2000-122
               </a>
-              <span className="block text-xs text-slate-500 mt-0.5">
+              <span className="block text-xs text-ink-300 mt-0.5">
                 круглосуточно, бесплатно
               </span>
             </li>
@@ -109,8 +109,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-slate-800">
-        <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+      <div className="border-t border-ink-800">
+        <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-ink-300">
           <p>
             © {new Date().getFullYear()} Simptomed. Все права защищены.
           </p>

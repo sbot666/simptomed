@@ -15,13 +15,13 @@ export default function PrivacyPage() {
         subtitle="Коротко: мы не требуем регистрации, не сохраняем диалоги на сервере и не связываем запросы с вашей личностью."
       />
 
-      <article className="max-w-3xl mx-auto px-6 py-12 space-y-8 text-slate-700 leading-relaxed">
-        <p className="text-sm text-slate-500">
+      <article className="max-w-3xl mx-auto px-6 py-12 space-y-8 text-ink-100 leading-relaxed">
+        <p className="text-sm text-ink-300">
           Последнее обновление: 19 апреля 2026 г.
         </p>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             1. Какие данные мы обрабатываем
           </h2>
           <ul className="space-y-2 pl-5 list-disc marker:text-brand-500">
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             2. Что мы не делаем
           </h2>
           <ul className="space-y-2 pl-5 list-disc marker:text-brand-500">
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             3. Передача данных провайдеру модели
           </h2>
           <p>
@@ -68,7 +68,7 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             4. Срок хранения
           </h2>
           <p>
@@ -83,7 +83,7 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             5. Ваши права
           </h2>
           <p>
@@ -95,7 +95,7 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             6. Контакты
           </h2>
           <p>
@@ -109,7 +109,7 @@ export default function PrivacyPage() {
           </p>
         </section>
 
-        <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
+        <div className="bg-amber-950/30 border border-amber-500/30 rounded-xl p-5 text-sm text-amber-200">
           ⚠️ Simptomed — информационный сервис, а не медицинская организация.
           Содержимое ответов не является медицинской консультацией и не может
           заменить очный приём у врача.

@@ -15,14 +15,14 @@ export default function TermsPage() {
         subtitle="Главное, что вам нужно знать перед использованием Simptomed."
       />
 
-      <article className="max-w-3xl mx-auto px-6 py-12 space-y-8 text-slate-700 leading-relaxed">
-        <p className="text-sm text-slate-500">
+      <article className="max-w-3xl mx-auto px-6 py-12 space-y-8 text-ink-100 leading-relaxed">
+        <p className="text-sm text-ink-300">
           Последнее обновление: 19 апреля 2026 г.
         </p>
 
-        <div className="bg-red-50 border-l-4 border-red-500 rounded-r-xl p-5">
-          <p className="font-semibold text-red-900 mb-2">Важно</p>
-          <p className="text-red-800 text-[15px]">
+        <div className="bg-red-950/40 border-l-4 border-red-400 rounded-r-xl p-5">
+          <p className="font-semibold text-red-200 mb-2">Важно</p>
+          <p className="text-red-200 text-[15px]">
             Simptomed — не медицинская услуга и не заменяет консультацию
             врача. Содержимое ответов носит информационный характер и не
             является медицинской рекомендацией. Точный диагноз и лечение
@@ -31,7 +31,7 @@ export default function TermsPage() {
         </div>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             1. Что такое Simptomed
           </h2>
           <p>
@@ -43,7 +43,7 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             2. Границы ответственности
           </h2>
           <ul className="space-y-2 pl-5 list-disc marker:text-brand-500">
@@ -63,7 +63,7 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             3. Разрешённое использование
           </h2>
           <p>Разрешено использовать сервис для:</p>
@@ -76,10 +76,10 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             4. Запрещённое использование
           </h2>
-          <ul className="space-y-2 pl-5 list-disc marker:text-red-500">
+          <ul className="space-y-2 pl-5 list-disc marker:text-red-400">
             <li>Выдавать ответы ИИ за медицинскую консультацию врача.</li>
             <li>Использовать сервис для принятия решений о препаратах или дозировках.</li>
             <li>Автоматизированные массовые запросы (скрейпинг, ddos и т.п.).</li>
@@ -88,7 +88,7 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             5. Стоимость
           </h2>
           <p>
@@ -99,7 +99,7 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">
             6. Изменение условий
           </h2>
           <p>
@@ -111,7 +111,7 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold text-slate-900 mb-3">7. Контакты</h2>
+          <h2 className="text-xl font-semibold text-ink-50 mb-3">7. Контакты</h2>
           <p>
             Вопросы по условиям:{" "}
             <a href="mailto:hello@simptomed.ru" className="text-brand-600 hover:underline">

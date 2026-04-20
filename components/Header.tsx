@@ -42,14 +42,14 @@ export default function Header() {
     <header
       className={`sticky top-0 z-40 transition-all duration-300 ${
         scrolled
-          ? "bg-white/80 backdrop-blur-xl border-b border-slate-200 shadow-sm"
-          : "bg-white/60 backdrop-blur-md border-b border-transparent"
+          ? "bg-ink-800/80 backdrop-blur-xl border-b border-ink-700 shadow-sm"
+          : "bg-ink-800/60 backdrop-blur-md border-b border-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <Logo size={32} />
-          <span className="font-semibold text-slate-900 tracking-tight">
+          <span className="font-semibold text-ink-50 tracking-tight">
             Simptomed
           </span>
         </Link>
@@ -63,15 +63,15 @@ export default function Header() {
                 href={item.href}
                 className={`relative px-3 py-1.5 rounded-lg transition ${
                   active
-                    ? "text-slate-900"
-                    : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+                    ? "text-ink-50"
+                    : "text-ink-200 hover:text-ink-50 hover:bg-ink-750"
                 }`}
               >
                 {item.label}
                 {active && (
                   <motion.span
                     layoutId="navActive"
-                    className="absolute inset-0 bg-slate-100 rounded-lg -z-10"
+                    className="absolute inset-0 bg-ink-750 rounded-lg -z-10"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -83,7 +83,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Link
             href="/chat"
-            className="hidden sm:inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 text-white font-medium text-sm px-4 py-2 rounded-lg transition shadow-sm hover:shadow-md"
+            className="hidden sm:inline-flex items-center gap-1.5 bg-ink-950 hover:bg-ink-900 text-white font-medium text-sm px-4 py-2 rounded-lg transition shadow-sm hover:shadow-md"
           >
             Начать
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -96,9 +96,9 @@ export default function Header() {
             onClick={() => setMobileOpen((v) => !v)}
             aria-label={mobileOpen ? "Закрыть меню" : "Открыть меню"}
             aria-expanded={mobileOpen}
-            className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition"
+            className="md:hidden p-2 rounded-lg hover:bg-ink-750 transition"
           >
-            <svg className="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-5 h-5 text-ink-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {mobileOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -116,7 +116,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden border-t border-slate-200 bg-white shadow-lg"
+            className="md:hidden border-t border-ink-700 bg-ink-800 shadow-lg"
           >
             <nav className="px-4 py-3 flex flex-col">
               {NAV.map((item) => {
@@ -127,8 +127,8 @@ export default function Header() {
                     href={item.href}
                     className={`px-3 py-2.5 rounded-lg text-sm ${
                       active
-                        ? "bg-slate-100 text-slate-900 font-medium"
-                        : "text-slate-700 hover:bg-slate-50"
+                        ? "bg-ink-750 text-ink-50 font-medium"
+                        : "text-ink-100 hover:bg-ink-850"
                     }`}
                   >
                     {item.label}
@@ -137,7 +137,7 @@ export default function Header() {
               })}
               <Link
                 href="/chat"
-                className="mt-2 text-center bg-slate-900 hover:bg-slate-800 text-white font-medium text-sm px-4 py-2.5 rounded-lg transition"
+                className="mt-2 text-center bg-ink-950 hover:bg-ink-900 text-white font-medium text-sm px-4 py-2.5 rounded-lg transition"
               >
                 Начать консультацию
               </Link>
