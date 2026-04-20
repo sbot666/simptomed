@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://simptomed.ru";
+const BASE_URL = "https://xn--d1abiqalgnm.xn--p1ai"; // симптомед.рф
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -3,7 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const SITE_URL = "https://simptomed.ru";
+// симптомед.рф in punycode — use ASCII form for metadata/crawlers.
+const SITE_URL = "https://xn--d1abiqalgnm.xn--p1ai";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

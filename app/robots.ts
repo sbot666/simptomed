@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://simptomed.ru/sitemap.xml",
+    sitemap: "https://xn--d1abiqalgnm.xn--p1ai/sitemap.xml", // симптомед.рф
   };
 }
