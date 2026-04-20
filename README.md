@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/sbot666/simptomed/actions/workflows/ci.yml/badge.svg)](https://github.com/sbot666/simptomed/actions/workflows/ci.yml)
 [![Deployed on Vercel](https://img.shields.io/badge/vercel-live-black?logo=vercel)](https://simptomed.vercel.app)
-![Next.js](https://img.shields.io/badge/Next.js-14-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38bdf8) ![Claude](https://img.shields.io/badge/Claude-Opus%204.7-8a4fff) ![License](https://img.shields.io/badge/license-MIT-green)
+![Next.js](https://img.shields.io/badge/Next.js-14-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38bdf8) ![Claude](https://img.shields.io/badge/Claude-Opus%204.7-8a4fff) ![Tests](https://img.shields.io/badge/tests-10%20passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-green)
 
 > **Live demo:** https://simptomed.vercel.app
 
@@ -118,6 +118,7 @@
 - ✅ `tsc --noEmit` — 0 ошибок
 - ✅ `next lint` — 0 warnings
 - ✅ `next build` — 14 маршрутов, prerender ok
+- ✅ `vitest run` — 10/10 тестов (rate-limiter: sliding-window, IP-изоляция, retry-after, парсинг `x-forwarded-for`)
 
 ### Lighthouse (mobile, throttled)
 
@@ -146,7 +147,8 @@
 | LLM | **Claude Opus 4.7** (Anthropic API, streaming, adaptive thinking, prompt cache) |
 | Markdown | **react-markdown 9** с кастомными компонентами |
 | Hosting | **Vercel** |
-| CI | **GitHub Actions** (typecheck · lint · build) |
+| Testing | **Vitest 4** (unit, fake timers, module-reset isolation) |
+| CI | **GitHub Actions** (typecheck · lint · test · build) |
 
 ---
 
