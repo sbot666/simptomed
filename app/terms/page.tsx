@@ -114,8 +114,8 @@ export default function TermsPage() {
           <h2 className="text-xl font-semibold text-ink-50 mb-3">7. Контакты</h2>
           <p>
             Вопросы по условиям:{" "}
-            <a href="mailto:hello@simptomed.ru" className="text-brand-600 hover:underline">
-              hello@simptomed.ru
+            <a href="mailto:gveilfn@mail.ru" className="text-brand-600 hover:underline">
+              gveilfn@mail.ru
             </a>
           </p>
         </section>

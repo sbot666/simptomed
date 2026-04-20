@@ -101,10 +101,10 @@ export default function PrivacyPage() {
           <p>
             По всем вопросам:{" "}
             <a
-              href="mailto:privacy@simptomed.ru"
+              href="mailto:gveilfn@mail.ru"
               className="text-brand-600 hover:underline"
             >
-              privacy@simptomed.ru
+              gveilfn@mail.ru
             </a>
           </p>
         </section>

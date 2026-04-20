@@ -13,7 +13,7 @@ export default function FaqPage() {
       <PageHero
         eyebrow="Вопросы"
         title="Часто задаваемые вопросы"
-        subtitle="Если вашего вопроса нет — напишите на hello@simptomed.ru."
+        subtitle="Если вашего вопроса нет — напишите на gveilfn@mail.ru."
       />
       <div className="-mt-12">
         <FAQ />
