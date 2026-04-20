@@ -8,8 +8,7 @@
 
 Медицинский триаж-чат на базе Claude. Пользователь описывает симптомы — ассистент структурированно отвечает: возможные причины, к какому врачу идти, когда вызывать скорую, что можно сделать сейчас. При обнаружении «красных флагов» сразу маршрутизирует в 103 / 112.
 
-<!-- TODO: replace with real screenshot/GIF, e.g. docs/screenshot.png -->
-![Simptomed screenshot](./docs/screenshot.png)
+![Simptomed — landing page](./docs/screenshot.jpg)
 
 ---
 
