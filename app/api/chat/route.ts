@@ -53,7 +53,7 @@ export async function POST(req: Request) {
     );
   }
   const baseURL = (process.env.ANTHROPIC_BASE_URL || DEFAULT_BASE_URL).replace(/\/+$/, "");
-  const model = process.env.ANTHROPIC_MODEL || "claude-opus-4.6";
+  const model = process.env.ANTHROPIC_MODEL || "claude-opus-4-7";
 
   const ip = getClientIp(req);
   const rate = checkRate(ip);
@@ -89,11 +89,16 @@ export async function POST(req: Request) {
     model,
     max_tokens: 4096,
     stream: true,
+    // Adaptive thinking: Claude dynamically decides when/how much to reason.
+    // Recommended default for Opus 4.7. No budget_tokens, no temperature.
+    thinking: { type: "adaptive" as const },
     system: [
       {
         type: "text",
         text: SYSTEM_PROMPT,
-        cache_control: { type: "ephemeral" },
+        // Prompt caching on the (large, stable) triage system prompt.
+        // ~85–90% token cost reduction on cache hits.
+        cache_control: { type: "ephemeral" as const },
       },
     ],
     messages: validated,
