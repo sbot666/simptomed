@@ -4,7 +4,7 @@
 [![Live](https://img.shields.io/badge/live-%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D0%BC%D0%B5%D0%B4.%D1%80%D1%84-d97757)](https://симптомед.рф)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38bdf8) ![Claude](https://img.shields.io/badge/Claude-Opus%204.7-8a4fff) ![Tests](https://img.shields.io/badge/tests-10%20passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-green)
 
-> **Live demo:** https://симптомед.рф
+> **Live demo:** http://симптомед.рф
 
 Медицинский триаж-чат на базе Claude. Пользователь описывает симптомы — ассистент структурированно отвечает: возможные причины, к какому врачу идти, когда вызывать скорую, что можно сделать сейчас. При обнаружении «красных флагов» сразу маршрутизирует в 103 / 112.
 
